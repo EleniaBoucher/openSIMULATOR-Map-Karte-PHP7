@@ -82,11 +82,11 @@
   if ($grid_x >=99999) {$grid_x = $CONF_center_coord_x;}
   if ($grid_y >=99999) {$grid_y = $CONF_center_coord_y;}
 
-  $start_x = $grid_x - 20;
-  $start_y = $grid_y + 10;
+  $start_x = $grid_x - 40;
+  $start_y = $grid_y + 30;
 
-  $end_x = $grid_x + 20;
-  $end_y = $grid_y - 10;
+  $end_x = $grid_x + 40;
+  $end_y = $grid_y - 30;
   
 // Datenbank anzapfen
 $con = mysqli_connect($dbort,$dbuser,$dbpw,$dbdb); 
@@ -206,19 +206,19 @@ $work_reg = $region['uuid'].";".$region['regionName'].";".$varreg_work_x.";".$va
   <table class="w3-table">
     <tr>
        <td align=center valign=middle>
-          <center><b><br><font color=w3-dark-grey><?php  echo $CONF_txt_coords;?></b><br><hr width=40%>
+          <center><b><br><font color=w3-blue-grey><?php  echo $CONF_txt_coords;?></b><br><hr width=40%>
           <table class="w3-table">
              <tr>
                <td align=right valign=middle border=0 width=40%>
                    <form name="submit" action="map.php" method="post">
-                   <font color=w3-dark-grey><b>X:</b></font>
+                   <font color=w3-blue-grey><b>X:</b></font>
                    <img src= ./img/spacer.gif></td>
                <td width=60% valign=middle align=left border=1 >
                    <input type="text" value="<?php print $grid_x;?>" name="x" size=4></td>
              </tr>
              <tr>
                <td align=right border=0 valign=middle width=40%>
-                   <font color=w3-dark-grey><b>Y:</b></font>
+                   <font color=w3-blue-grey><b>Y:</b></font>
                    <img src= ./img/spacer.gif></td><td width=60% valign=middle border=1 align=left> 
                    <input type="text" name="y" size=4 value="<?php print $grid_y;?>"></td></font>
              </tr>
@@ -400,11 +400,10 @@ $work_reg = $region['uuid'].";".$region['regionName'].";".$varreg_work_x.";".$va
    </table>
 
 <img src = "./img/spacer.gif" width="350" height="1">
-<img src="./img/grid_frei.jpg"> = Freie Koordinaten &nbsp;&nbsp;&nbsp;
-<img src="./img/grid_besetzt.jpg"> = Besetzt (SingleRegion) &nbsp;&nbsp;&nbsp;
-<img src="./img/grid_varregion.jpg"> = Besetzt (VarRegion) &nbsp;&nbsp;&nbsp;
-<img src="./img/grid_mainland.jpg"> = Zentrum vom Grid &nbsp;&nbsp;&nbsp;
-
+<img src="./img/grid_frei.png"> = Freie Koordinaten &nbsp;&nbsp;&nbsp;
+<img src="./img/grid_besetzt.png"> = Besetzt (SingleRegion) &nbsp;&nbsp;&nbsp;
+<img src="./img/grid_varregion.png"> = Besetzt (VarRegion) &nbsp;&nbsp;&nbsp;
+<img src="./img/grid_mainland.png"> = Zentrum vom Grid &nbsp;&nbsp;&nbsp;
 
 
 </div>
