@@ -27,6 +27,8 @@ Die Nutzung der Software geschieht auf eigenes Risiko.
 
 Fertig!
 
+.
+
 ![Title](https://github.com/wp2opensim/openSIMULATOR-Map-Karte/blob/master/img/vorschau.jpg)
 
 P.S. Für die Farbanpassung bitte dies hier lesen:
