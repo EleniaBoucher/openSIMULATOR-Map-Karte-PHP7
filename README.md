@@ -1,6 +1,8 @@
 # openSIMULATOR-Map-Karte
 Eine Karte mit Installer die auch unter PHP7 funktioniert. (12-2-2017)
 
+Dies ist bereits Bestandteil von openSIMULATOR-SPLASH-PHP7.
+
 Systemanforderungen PHP z.B. unter Windows kann XAMPP genutzt werden. 
 
 Unter Linux einfach Apache und PHP installieren.
